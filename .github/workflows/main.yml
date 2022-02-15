@@ -6,7 +6,7 @@ env:
   # Directory within the Cloud Manager Git repository
   PROJECT_DIR: project-a
   # Cloud Manager's Git repository
-  MAIN_REPOSITORY: https://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@github.com/kailasnadh790/action-test-target
+  MAIN_REPOSITORY: https://user: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@github.com/kailasnadh790/action-test-target
   # The branch in Cloud Manager's Git repository to push to
   MAIN_BRANCH : main
  
