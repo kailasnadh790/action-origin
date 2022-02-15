@@ -6,7 +6,7 @@ env:
   # Directory within the Cloud Manager Git repository
   PROJECT_DIR: project-a
   # Cloud Manager's Git repository
-  MAIN_REPOSITORY: https://user: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@github.com/kailasnadh790/action-test-target
+  MAIN_REPOSITORY: https://github.com/kailasnadh790/action-test-target
   # The branch in Cloud Manager's Git repository to push to
   MAIN_BRANCH : main
  
@@ -46,6 +46,8 @@ jobs:
           rm -rf main/${PROJECT_DIR} 
           mv sub main/${PROJECT_DIR}
       - name: Commit Changes
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         run: |
           git -C main add -f ${PROJECT_DIR}
           git -C main commit -F ../commit.txt
