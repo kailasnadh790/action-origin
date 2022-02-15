@@ -49,4 +49,4 @@ jobs:
         run: |
           git -C main add -f ${PROJECT_DIR}
           git -C main commit -F ../commit.txt
-          git -C main push
+          git -C main push origin
