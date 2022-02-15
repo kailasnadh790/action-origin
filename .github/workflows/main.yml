@@ -1,14 +1,14 @@
 name: SYNC
 env:
   # Username/email used to commit to Cloud Manager's Git repository
-  USER_NAME: <NAME>
-  USER_EMAIL: <EMAIL>
+  USER_NAME: kailasnadh790
+  USER_EMAIL: kailasnadhu90@gmail.com
   # Directory within the Cloud Manager Git repository
   PROJECT_DIR: project-a
   # Cloud Manager's Git repository
-  MAIN_REPOSITORY: https://$MAIN_USER:$MAIN_PASSWORD@git.cloudmanager.adobe.com/<PATH>
+  MAIN_REPOSITORY: https://github.com/kailasnadh790/action-test-target
   # The branch in Cloud Manager's Git repository to push to
-  MAIN_BRANCH : <BRANCH_NAME>
+  MAIN_BRANCH : main
  
 # Only run on a push to this branch
 on:
